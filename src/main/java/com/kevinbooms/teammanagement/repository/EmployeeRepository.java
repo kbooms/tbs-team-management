@@ -1,0 +1,8 @@
+package com.kevinbooms.teammanagement.repository;
+
+import com.kevinbooms.teammanagement.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+
+}
