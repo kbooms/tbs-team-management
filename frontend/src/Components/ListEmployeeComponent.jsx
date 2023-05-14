@@ -10,9 +10,9 @@ class ListEmployeeComponent extends Component {
         }
     }
     componentDidMount() {
-        EmployeeService.getEmployees().then(res) => {
+        EmployeeService.getEmployees().then((res) => {
             this.setState({ employees: res.data})
-        }
+        });
     }
     render() {
         return (
@@ -37,7 +37,7 @@ class ListEmployeeComponent extends Component {
                                     <tr key = {employee.id}> 
                                         <td> { employee.firstName } </td>
                                         <td> { employee.lastName } </td>
-                                        <td> { employee.emailId } </td>
+                                        <td> { employee.email } </td>
                                     </tr>
                                 )
                             }
