@@ -11,3 +11,7 @@ public interface EmployeeService {
    Employee updateEmployee(Employee employee, long id);
    void deleteEmployee(long id);
 }
+
+// Think of this Service Interface as a DAO interface
+// best explanation I can think of.
+// The ServiceImpl class stores the business logic implementations of these methods
